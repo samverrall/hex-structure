@@ -22,5 +22,5 @@ func main() {
 	// this is swapple since we can spin up another primary adapter, and inject business logic
 	srv := web.NewApp(usersService, web.WithPort(8000))
 
-	go srv.Run()
+	srv.Run()
 }
