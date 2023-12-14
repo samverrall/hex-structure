@@ -15,6 +15,7 @@ type App struct {
 
 func NewApp(userAPI users.API, opts ...AppOption) *App {
 	s := &App{
+		fiber:   fiber.New(),
 		userAPI: userAPI,
 		port:    8000,
 	}
